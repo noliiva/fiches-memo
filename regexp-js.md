@@ -1,4 +1,3 @@
-
 Fonctions Javascript associées :
 --------------------------------
 | Fonction  | Commentaire                                   | Exemple
@@ -9,7 +8,6 @@ Fonctions Javascript associées :
 | replace() | Effectue un rechercher/remplacer              | ` text.replace(/\[b\]([\s\S]*?)\[\/b\]/g, '<strong>$1</strong>'); `
 | RegExp.test() | Retourne **true** si le test est réussi, **false** sinon
 | RegExp.exec() | Renvoie un tableau dont le premier élément contient la portion de texte trouvée sinon renvoie **null**
-_
 
 Object RegExp :
 ---------------
@@ -19,7 +17,6 @@ Object RegExp :
  myRegex.test('Chaîne de caractères');
  /contenu_à_rechercher/.test('Chaîne de caractères');
 ```
-_
 
 Options :
 ---------
@@ -27,7 +24,6 @@ Options :
 |-------|------------
 | i     | Ignore la casse              | ` /contenu_à_rechercher/i `
 | g     | Rechercher plusieurs fois
-_
 
 Metacaractères :
 ----------------
@@ -49,7 +45,6 @@ Metacaractères :
 | \\    | Echapper un metacaractère
 | ()    | Parenthèses capturantes      | ` RegExp.$1 à RegExp.$9 `
 | (?:)  | Parenthèses non capturantes  | ` /(?:https\|http\|ftp\|steam):\/\// `
-_
 
 Types génériques :
 ------------------
@@ -63,7 +58,6 @@ Types génériques :
 | \S    | Trouve un caractère qui n'est pas un caractère blanc
 | \w    | Trouve un caractère « de mot » : une lettre, accentuée ou non, ainsi que l'underscore
 | \W    | Trouve un caractère qui n'est pas un caractère « de mot »
-_
 
 Assertions :
 ------------
@@ -71,7 +65,6 @@ Assertions :
 |-----------|------------
 | \b    | Trouve une limite de mot
 | \B    | Ne trouve pas de limite de mot
-_
 
 Fonction de remplacement :
 --------------------------
@@ -85,8 +78,7 @@ function(str, p1, p2, p3 /* ... */, offset, s)
 | offset | opt - contient la position de la portion de texte trouvée
 | s      | opt - contient la totalité de la chaîne
 
-_
-### Exemple :
+## Exemple :
 ```javascript
  var email = "contact@email.com";
  if ( /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/.test(email) )
