@@ -2,3 +2,4 @@
 Fiches mnemotechniques diverses sur le dev
 
 - RegExp javascript
+- Blocker commands
