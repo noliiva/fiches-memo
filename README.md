@@ -1,5 +1,6 @@
 # fiches-memo
 Fiches mnemotechniques diverses sur le dev
 
-- RegExp javascript
+- RegExp on javascript
 - Blocker commands
+- Linux doc
