@@ -28,16 +28,29 @@ sudo apt-get update
 sudo apt-get install docker-engine
 ```
 
-- Test:
-```
-sudo service docker start
-sudo docker run hello-world
-```
-
-- Start service on boot:
+- Setup service to start on boot:
 ```
 sudo systemctl enable docker
 ```
+
+- Start service:
+```
+sudo service docker start
+```
+
+- Create a Docker group and add yourself into:
+You must restart after.
+```
+sudo groupadd docker
+sudo usermod -aG docker ubuntu
+```
+
+- Test:
+```
+docker info
+docker run hello-world
+```
+
 
 ---
 
