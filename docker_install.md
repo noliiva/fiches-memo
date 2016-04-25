@@ -1,4 +1,4 @@
-## Installation on Ubuntu Xenial 16.04 (LTS)
+## Docker installation - Ubuntu Xenial 16.04 (LTS)
 source : https://docs.docker.com/engine/installation/linux/ubuntulinux/
 
 - Setup access to Docker repository:
@@ -52,7 +52,7 @@ docker run hello-world
 ```
 
 ---
-### Install Docker-compose
+## Install Docker-compose
 ```
 sudo -i
 curl -L https://github.com/docker/compose/releases/download/1.7.0/docker-compose-`uname -s`-`uname -m` >  /usr/local/bin/docker-compose
