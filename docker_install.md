@@ -79,5 +79,9 @@ configuration files on your host.
 ```
 rm -rf /var/lib/docker
 ```
-
 You must delete the user created configuration files manually.
+
+- To uninstall Docker Compose:
+```
+rm /usr/local/bin/docker-compose
+```
