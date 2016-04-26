@@ -13,3 +13,7 @@ sudo systemctl enable "service_name"
 sudo dpkg -i "package_name.deb"
 sudo apt-get -f install
 ```
+##### Check if a package is available
+```
+apt-cache search "package_name"
+```
