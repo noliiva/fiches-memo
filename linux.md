@@ -17,3 +17,14 @@ sudo apt-get -f install
 ```
 apt-cache search "package_name"
 ```
+
+---
+## Nano usefull shortcut
+| Shortcut   | Description 
+|------------|-------------
+| Ctrl+Alt+6 | Select
+| Alt+6      | Copy
+| Ctrl+K     | Cut
+| Ctrl+U     | Paste
+| Ctrl+O     | Save
+| Ctrl+X     | Exit
