@@ -19,7 +19,7 @@ apt-cache search "package_name"
 ```
 
 ---
-## Nano usefull shortcut
+## Nano useful shortcut
 | Shortcut   | Description 
 |------------|-------------
 | Ctrl+Alt+6 | Select
