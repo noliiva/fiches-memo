@@ -17,6 +17,10 @@ sudo apt-get -f install
 ```
 apt-cache search "package_name"
 ```
+##### Search a file
+```
+find "my_dir" -name 'my_file.ext'
+```
 
 ---
 ## Nano useful shortcut
