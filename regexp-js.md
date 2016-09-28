@@ -50,14 +50,16 @@ Types génériques :
 ------------------
 | Type      | Commentaire
 |-----------|------------
-| \d    | Trouve un caractère décimal (un chiffre)
-| \D    | Trouve un caractère qui n'est pas décimal (donc pas un chiffre)
-| \s    | Trouve un caractère blanc
-| \t    | Trouve un retour à la ligne = caractère blanc
-| \n    | Trouve une tabulation = caractère blanc
-| \S    | Trouve un caractère qui n'est pas un caractère blanc
-| \w    | Trouve un caractère « de mot » : une lettre, accentuée ou non, ainsi que l'underscore
-| \W    | Trouve un caractère qui n'est pas un caractère « de mot »
+| \d    | Caractère décimal (un chiffre)
+| \D    | Caractère qui n'est pas décimal (donc pas un chiffre)
+| \t    | Trouve une tabulation (U+0009)
+| \n    | Retour à la ligne (U+000A)
+| \r    | Retour chariot (U+000D)
+| \f    | Saut de page (U+000C)
+| \s    | Caractère blanc (espace, tabulation, saut de ligne ou saut de page)
+| \S    | Caractère qui n'est pas un caractère blanc
+| \w    | Caractère de mot : n'importe quel caractère alphanumérique, accentué ou non, y compris le tiret bas
+| \W    | Caractère qui n'est pas un caractère de mot
 
 Assertions :
 ------------
