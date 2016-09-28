@@ -80,11 +80,18 @@ function(str, p1, p2, p3 /* ... */, offset, s)
 | offset | opt - contient la position de la portion de texte trouvée
 | s      | opt - contient la totalité de la chaîne
 
-## Exemple :
+## Exemples :
 ```javascript
  var email = "contact@email.com";
  if ( /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/.test(email) )
     // Adresse e-mail valide
  else
     // Adresse e-mail invalide
+```
+```javascript
+ const regex = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/;
+ regex.test('0611223344') // true
+ regex.test('+33 611223344') // true
+ regex.test('06.11.22.33.44') // true
+ regex.test('333-222-4444') // true
 ```
