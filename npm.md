@@ -10,7 +10,7 @@
 |```npm login```|Se connecter|
 |```npm publish```|Publie avec le tag 'latest' /!\ Penser à updater la version dans le package.json|
 |```npm publish --tag <tag>```|Publie avec un tag différent de 'latest'|
-|```npm unpublish <pkg>@<version>```|Supprimer une publication du repo|
+|```npm unpublish <pkg>@<version>```|Supprimer une publication du repo (seulement pour les publications de moins de 24h)|
 |```npm dist-tag ls [<pkg>]```|Liste les tags|
 |```npm dist-tag add <pkg>@<version> [<tag>]```|Changement du tag de la version publiée\
 |```npm dist-tag rm <pkg> <tag>```|Effacer le tag du package|
