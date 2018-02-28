@@ -22,6 +22,11 @@ apt-cache search "package_name"
 find "my_dir" -name 'my_file.ext'
 ```
 
+##### ENOSPC bug fix
+```
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
+
 ---
 ## Nano useful shortcut
 | Shortcut   | Description 
