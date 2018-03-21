@@ -1,3 +1,3 @@
 ```
-<pre>{JSON.stringify(restrictionProviderTree.toJS(), null, 2)}</pre>
+<pre>{JSON.stringify(myObject, null, 2)}</pre>
 ```
