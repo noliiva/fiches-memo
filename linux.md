@@ -27,6 +27,16 @@ find "my_dir" -name 'my_file.ext'
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 ```
 
+#### Remove git .ori
+```
+find . -name "*.orig" -type f -delete
+```
+
+#### Update a node module localy
+```
+cd ~/my_dir/my_library_dir && yarn build && cd ~/my_dir/my_project && rm -rf node_modules/my_library/es && rm -rf node_modules/my_library/lib && cp -R ~/my_dir/my_library/es node_modules/my_library && cp -R ~/my_dir/my_library_dir/lib node_modules/my_library && yarn build:dll
+```
+
 ---
 ## Nano useful shortcut
 | Shortcut   | Description 
