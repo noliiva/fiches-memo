@@ -16,6 +16,7 @@ Principaly started with create-react-app.
   ],
   "src/**/*.{js,jsx,css,scss}": [
     "npm run prettier",
+    "git add",
     "npm run lint"
   ]
 },
