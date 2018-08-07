@@ -8,3 +8,4 @@ Fiches diverses sur le dev
 - Arch linux doc
 - Npm doc
 - Code snippets
+- Base config for react projects
