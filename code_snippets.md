@@ -6,8 +6,7 @@ Delayed js debugger
 ```
 setTimeout(() => { debugger; }, 5000)
 ```
-Create an array of n following number, starting at 0
+Create an array of n following number [0, 1, 2, ..., n-1]
 ```
-Array.apply(null, {length: N}).map(Number.call, Number)
-=> [0, 1, 2, ..., n-1]
+Array.from(Array(10), (_, i) => i)
 ```
