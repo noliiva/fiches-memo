@@ -10,3 +10,6 @@ Create an array of n following number [0, 1, 2, ..., n-1]
 ```
 Array.from(Array(10), (_, i) => i)
 ```
+Sleep method
+````
+await new Promise(r => setTimeout(r, 2000));
