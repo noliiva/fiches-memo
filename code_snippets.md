@@ -18,9 +18,9 @@ await new Promise(r => setTimeout(r, 2000));
 ```
 
 # CSS
-Display full links in print stylesheets:
+Display full links in print stylesheets: (source: https://css-tricks.com/css-content/)
 ```
 @media print {
-     #main-content a[href]:after { " (" attr(href) ") "; }
+     a[href]:after { " (" attr(href) ") "; }
 }
 ```
