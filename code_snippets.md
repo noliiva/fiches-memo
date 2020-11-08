@@ -1,15 +1,26 @@
-Display readable json
+# JS
+
+Display readable json:
 ```
 <pre>{JSON.stringify(myObject, null, 2)}</pre>
 ```
-Delayed js debugger
+Delayed js debugger:
 ```
 setTimeout(() => { debugger; }, 5000)
 ```
-Create an array of n following number [0, 1, 2, ..., n-1]
+Create an array of n following number [0, 1, 2, ..., n-1]:
 ```
 Array.from(Array(10), (_, i) => i)
 ```
-Sleep method
-````
+Sleep method:
+```
 await new Promise(r => setTimeout(r, 2000));
+```
+
+# CSS
+Display full links in print stylesheets:
+```
+@media print {
+     #main-content a[href]:after { " (" attr(href) ") "; }
+}
+```
