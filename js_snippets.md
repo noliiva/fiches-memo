@@ -1,4 +1,4 @@
-# JS
+# JS snippets
 
 Display readable json:
 ```
@@ -15,12 +15,4 @@ Array.from(Array(10), (_, i) => i)
 Sleep method:
 ```
 await new Promise(r => setTimeout(r, 2000));
-```
-
-# CSS
-Display full links in print stylesheets: (source: https://css-tricks.com/css-content/)
-```
-@media print {
-     a[href]:after { " (" attr(href) ") "; }
-}
 ```
