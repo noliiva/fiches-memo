@@ -16,3 +16,9 @@ Sleep method:
 ```
 await new Promise(r => setTimeout(r, 2000));
 ```
+Get form inputs values:
+```
+const inputs = document.forms?.formId?.elements;
+const inputs = document.getElementById(formId)?.elements;
+Array.from(inputs).reduce((values, input) => acc[input.name] = input.value, {});
+```
