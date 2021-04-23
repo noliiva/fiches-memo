@@ -1,4 +1,5 @@
 source : Samuel Resua (https://medium.com/@samuelresua/global-state-machine-with-react-context-afd0d5475592)
+
 # App.js
 ```javascript
 import ReactDOM from 'react-dom';
@@ -6,7 +7,7 @@ import Store from './store';
 
 const App = () => (
   <Store>
-    ...
+    <ComponentExample />
   </Store>
 );
 
