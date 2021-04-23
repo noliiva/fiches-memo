@@ -13,18 +13,6 @@ const App = () => (
 ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
-# store/index.js
-```javascript
-import createStore from './createStore';
-import counter from './counter';
-import toggle from './toggle';
-
-const { Store, ...contexts } = createStore([counter, toggle]);
-
-export contexts;
-export default Store;
-```
-
 # store/contextExample.js
 ```javascript
 const contextExample = {
@@ -95,6 +83,18 @@ const createStore = (config = []) => {
 }
 
 export default createStore;
+```
+
+# store/index.js
+```javascript
+import createStore from './createStore';
+import counter from './counter';
+import toggle from './toggle';
+
+const { Store, ...contexts } = createStore([counter, toggle]);
+
+export contexts;
+export default Store;
 ```
 
 # components/ComponentExample.js
