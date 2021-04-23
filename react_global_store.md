@@ -89,10 +89,10 @@ export default createStore;
 # store/index.js
 ```javascript
 import createStore from './createStore';
-import counter from './counter';
-import toggle from './toggle';
+import contextExample from './contextExample';
+import contextExampleBis from './contextExampleBis';
 
-const { Store, ...contexts } = createStore([counter, toggle]);
+const { Store, ...contexts } = createStore([contextExample, contextExampleBis]);
 
 export contexts;
 export default Store;
