@@ -11,6 +11,7 @@ setTimeout(() => { debugger; }, 5000)
 Create an array of n following number [0, 1, 2, ..., n-1]:
 ```
 Array.from(Array(10), (_, i) => i)
+Array.from({ length: 4 })
 ```
 Sleep method:
 ```
