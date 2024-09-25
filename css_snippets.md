@@ -1,5 +1,10 @@
 # CSS snippets
 
+## Create new stacking context
+```
+isolation: isolate;
+```
+
 ## Hide something while keeping it accessible
 
 (source: https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html)
