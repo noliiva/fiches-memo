@@ -55,7 +55,7 @@ span {
 
 ## Align icon perfectly with text:
 
-(sources: https://css-tricks.com/reverse-text-color-mix-blend-mode/, https://css-tricks.com/methods-contrasting-text-backgrounds/)
+(sources: https://blog.kizu.dev/cap-height-align//)
 ```
 <p><span class="icon">@</span> Don't be square!</p>
 ```
@@ -65,7 +65,8 @@ span {
   height: 1em;
   width: 1em;
   vertical-align: middle;
-  margin-top: calc(1ex - 1cap);
+  margin-block-start: calc(1ex - 1cap);
+
   background: currentColor;
   color: white;
 }
