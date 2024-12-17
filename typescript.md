@@ -118,8 +118,8 @@ const fetchData = async <TResult = "You must pass a type argument to fetchData">
 //  ⤤ const data: "You must pass a type argument to fetchData"
 ```
 
-\[
-Typing dynamic function args](https://github.com/total-typescript/typescript-generics-workshop/blob/main/src/06-challenges/29.2-dynamic-function-arguments.solution.ts)
+\
+[Typing dynamic function args](https://github.com/total-typescript/typescript-generics-workshop/blob/main/src/06-challenges/29.2-dynamic-function-arguments.solution.ts)
 
 \
 Always represent generics with a low-level type. ([source 1](https://github.com/total-typescript/typescript-generics-workshop/blob/main/src/03-art-of-type-arguments/12-generics-at-different-levels.solution.1.ts), [source 2](https://github.com/total-typescript/typescript-generics-workshop/blob/main/src/03-art-of-type-arguments/12-generics-at-different-levels.solution.1.ts))
@@ -178,15 +178,13 @@ const getHomePageFeatureFlags = <HomePageFlags>(
 //   showBanner: boolean;
 //   showLogOut: boolean;
 //  }>( ... ) => { ... }
-
-// ===== //
-
+```
+``` ts
 const typedObjectKeys = <TKey extends string>(obj: Record<TKey, any>) => {
   return Object.keys(obj) as Array<TKey>;
 };
-
-// ===== //
-
+```
+``` ts
 const getStatuses = <TStatuses extends string[]>(statuses: TStatuses) => {}
 // ⤤ ReturnType = Array<string>
 
@@ -243,6 +241,8 @@ function remapPerson<Key extends keyof Person>(
 }
 ```
 
+\
+Infering Object values from literal key.
 ``` ts
 const getValue = <TObj, TKey extends keyof TObj>(obj: TObj, key: TKey) => {
   return obj[key];
