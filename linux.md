@@ -36,14 +36,3 @@ find . -name "*.orig" -type f -delete
 ```
 cd ~/my_dir/my_library_dir && yarn build && cd ~/my_dir/my_project && rm -rf node_modules/my_library/es && rm -rf node_modules/my_library/lib && cp -R ~/my_dir/my_library/es node_modules/my_library && cp -R ~/my_dir/my_library_dir/lib node_modules/my_library && yarn build:dll
 ```
-
----
-## Nano useful shortcut
-| Shortcut   | Description 
-|------------|-------------
-| Ctrl+Alt+6 | Select
-| Alt+6      | Copy
-| Ctrl+K     | Cut
-| Ctrl+U     | Paste
-| Ctrl+O     | Save
-| Ctrl+X     | Exit
